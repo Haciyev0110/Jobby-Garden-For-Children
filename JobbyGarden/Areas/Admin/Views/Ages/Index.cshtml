@@ -1,0 +1,47 @@
+﻿@model IEnumerable<JobbyGarden.Models.Age>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layoutpanel.cshtml";
+}
+
+<h2>Index</h2>
+
+<section class="content">
+    <div class="container-fluid" >
+        <p>
+            <a class="btn btn-success btn-lg" style="margin:20px 0:" asp-controller="Ages" asp-action="Create">Create New</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Miniage)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Maxage)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Miniage)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Maxage)
+                        </td>
+                        <td>
+                            <a class="btn btn-warning btn-lg" style="margin:20px 0" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a class="btn btn-info btn-lg" style="margin:20px 0" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a class="btn btn-danger btn-lg" style="margin:20px 0" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</section>

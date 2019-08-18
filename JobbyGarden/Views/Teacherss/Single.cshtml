@@ -1,0 +1,203 @@
+﻿@model JobbyGarden.ViewModel.SingleVM
+@{
+    ViewData["Title"] = "Single";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- MAIN-->
+<main id="main">
+
+
+    <!-- PAGE HEADING-->
+    <section class="section page-heading js-parallax-scroll" style="background-image: url('/syte/images/bg-heading-02.jpg');">
+        <div class="container">
+            <div class="page-heading-inner">
+                <div class="section-heading section-heading-1 section-heading-1--tiny text-left">
+                    <h2 class="section-heading__title">teacher single</h2>
+                    <div class="section-heading__line">
+                        <img src="~/syte/images/icon/line-blue-small.png" alt="Line" />
+                    </div>
+                </div>
+                <nav class="au-breadcrumb">
+                    <ul class="list-unstyled list-breadcrumb">
+                        <li class="list-breadcrumb__item">
+                            <a asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="list-breadcrumb__item">teacher</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- END PAGE HEADING-->
+    <!-- TEACHER SINGLE-->
+    <section class="section p-t-125 p-b-50">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-5 col-lg-4">
+                    <div class="media media-teacher-4">
+                        <div class="media__head">
+                            <div class="media__img">
+                                <img src="~/Librarry/Teacher/@Model.teacearSingle.Images" alt="Teacher">
+                            </div>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="title title--md">@Model.teacearSingle.Fullname</h3>
+                            <span class="d-block">@Model.teacearSingle.Special</span>
+                            <ul class="list-unstyled list-teacher-info-2">
+                                <li>
+                                    <span class="lnr lnr-linearicons"></span>@Model.teacearSingle.Experience years experience
+                                </li>
+                                <li>
+                                    <span class="lnr lnr-phone"></span>@Model.teacearSingle.Phone
+                                </li>
+                                <li>
+                                    <span class="lnr lnr-envelope"></span><a>@Model.teacearSingle.Email</a>
+                            </ul>
+                            <div class="media__tool">
+                                <a class="au-icon au-icon-2" href="#">
+                                    <i class="zmdi zmdi-facebook-box"></i>
+                                </a>
+                                <a class="au-icon au-icon-2" href="#">
+                                    <i class="zmdi zmdi-twitter"></i>
+                                </a>
+                                <a class="au-icon au-icon-2" href="#">
+                                    <i class="zmdi zmdi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <div class="p-l-55 p-sm-l-0">
+                        <h2 class="title title--s35 m-b-20">Teacher @Model.teacearSingle.Fullname</h2>
+                        <p class="m-b-20">
+                           @Model.teacearSingle.Minidescription
+                        </p>
+                        <ul class="list-unstyled list-teacher-info-3 m-b-20">
+                            <li>
+                                <i class="zmdi zmdi-check-circle"></i>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                            </li>
+                            <li>
+                                <i class="zmdi zmdi-check-circle"></i>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+                            </li>
+                            <li>
+                                <i class="zmdi zmdi-check-circle"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                            </li>
+                            <li>
+                                <i class="zmdi zmdi-check-circle"></i>On the other hand, we denounce with righteous indignation
+                            </li>
+                        </ul>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END TEACHER SINGLE-->
+    <!-- TESTI-->
+    <section class="section bg-pattern bg-pattern-2 p-t-130 p-md-t-50 p-b-90 p-md-b-50">
+        <div class="slick-testi-2">
+            <div class="slick__wrap-content js-slick-wrapper" data-slick-xs="1" data-slick-sm="1" data-slick-md="1" data-slick-lg="1" data-slick-xl="1" data-slick-dots="true" data-slick-customnav="true" data-slick-autoplay="false" data-slick-centermode="true" data-slick-variablewidth="true"
+                 data-slick-variableheight="true" data-slick-centerpadding="0px" data-slick-focuson="true">
+                <div class="slick__content js-slick-content">
+                    <div class="slick__item">
+                        <div class="media media-testi-1">
+                            <div class="media__body">
+                                <div class="media__body-inner">
+                                    <blockquote class="media__quote">
+                                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain
+                                        and trouble that are bound.
+                                    </blockquote>
+                                </div>
+                                <div class="qoute-before"></div>
+                                <div class="qoute-after"></div>
+                            </div>
+                            <div class="media__info-wrap">
+                                <div class="media__img img-circle">
+                                    <img src="~/syte/images/testi-01.jpg" alt="Pamela Carroll" />
+                                </div>
+                                <div class="media__info">
+                                    <h5 class="title title--sbold">Pamela Carroll</h5>
+                                    <span class="job">- Designer -</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick__item">
+                        <div class="media media-testi-1">
+                            <div class="media__body">
+                                <div class="media__body-inner">
+                                    <blockquote class="media__quote">
+                                        These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed
+                                        and every pain avoided.
+                                    </blockquote>
+                                </div>
+                                <div class="qoute-before"></div>
+                                <div class="qoute-after"></div>
+                            </div>
+                            <div class="media__info-wrap">
+                                <div class="media__img img-circle">
+                                    <img src="~/syte/images/testi-02.jpg" alt="Pamela Carroll" />
+                                </div>
+                                <div class="media__info">
+                                    <h5 class="title title--sbold">Pamela Carroll</h5>
+                                    <span class="job">- Photography -</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick__item">
+                        <div class="media media-testi-1">
+                            <div class="media__body">
+                                <div class="media__body-inner">
+                                    <blockquote class="media__quote">
+                                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam
+                                        et aut officiis
+                                    </blockquote>
+                                </div>
+                                <div class="qoute-before"></div>
+                                <div class="qoute-after"></div>
+                            </div>
+                            <div class="media__info-wrap">
+                                <div class="media__img img-circle">
+                                    <img src="~/syte/images/testi-03.jpg" alt="Adam Crawford" />
+                                </div>
+                                <div class="media__info">
+                                    <h5 class="title title--sbold">Adam Crawford</h5>
+                                    <span class="job">- Designer -</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick__item">
+                        <div class="media media-testi-1">
+                            <div class="media__body">
+                                <div class="media__body-inner">
+                                    <blockquote class="media__quote">
+                                        These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed
+                                        and every pain avoided.
+                                    </blockquote>
+                                </div>
+                                <div class="qoute-before"></div>
+                                <div class="qoute-after"></div>
+                            </div>
+                            <div class="media__info-wrap">
+                                <div class="media__img img-circle">
+                                    <img src="~/syte/images/testi-02.jpg" alt="Pamela Carroll" />
+                                </div>
+                                <div class="media__info">
+                                    <h5 class="title title--sbold">Pamela Carroll</h5>
+                                    <span class="job">- Photography -</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick__dots dots-style2"></div>
+            </div>
+        </div>
+    </section>
+    <!-- END TESTI-->
+</main>
+<!-- END MAIN-->

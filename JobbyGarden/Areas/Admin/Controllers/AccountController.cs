@@ -1,0 +1,70 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using JobbyGarden.Models;
+using JobbyGarden.ViewModel;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
+
+namespace JobbyGarden.Areas.Admin.Controllers
+{
+    [Area("Admin")]
+
+    public class AccountController : Controller
+    {
+        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
+
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager)
+        {
+            _userManager = userManager;
+            _signInManager = signInManager;
+        }
+        [AllowAnonymous]
+        public IActionResult Login(string returnUrl)
+        {
+            return View(new LoginVm {
+                ReturnUrl=returnUrl
+            });
+        }
+
+
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginVm vmmodel)
+        {
+            if (ModelState.IsValid)
+            {
+                User user = await _userManager.FindByEmailAsync(vmmodel.Email);
+
+                if (user != null)
+                {
+                    // проверяем, принадлежит ли URL приложению
+
+                    await _signInManager.SignOutAsync();
+                    if ((await _signInManager.PasswordSignInAsync(user, vmmodel.Password, false, false)).Succeeded) {
+
+                        return Redirect(vmmodel?.ReturnUrl ?? "/Admin/Dashboard/Index");
+                    }
+                }
+            }
+            ModelState.AddModelError("", "Invalid email or password");
+
+            return View(vmmodel);
+        }
+
+        public async Task<IActionResult> Logout(string returnUrl="/")
+        {
+            await _signInManager.SignOutAsync();
+            return Redirect(returnUrl);
+
+        }
+
+
+        }
+
+
+    }

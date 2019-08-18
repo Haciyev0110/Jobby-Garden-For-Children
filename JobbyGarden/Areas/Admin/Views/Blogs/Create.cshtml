@@ -1,0 +1,73 @@
+﻿@model JobbyGarden.Models.Blog
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layoutpanel.cshtml";
+    var blogss = ViewData["BlogcategoryId"] as SelectList;
+}
+<section class="content" style="height:auto">
+    <div class="container-fluid">
+        <h2>Create</h2>
+
+        <h4>Blog</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Blogdesc1" class="control-label"></label>
+                        <input asp-for="Blogdesc1" class="form-control" />
+                        <span asp-validation-for="Blogdesc1" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Blogdesc2" class="control-label"></label>
+                        <input asp-for="Blogdesc2" class="form-control" />
+                        <span asp-validation-for="Blogdesc2" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Title" class="control-label"></label>
+                        <input asp-for="Title" class="form-control" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Date" class="control-label"></label>
+                        <input asp-for="Date" class="form-control" />
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Status" class="control-label"></label>
+                        <input asp-for="Status" class="form-control" />
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                    </div>
+                    <div class="form-group" id="product-wrapper-1">
+                        <label asp-for="BlogcategoryId" class="control-label"></label>
+                        <select asp-for="BlogcategoryId" class="form-control" asp-items="ViewBag.BlogcategoryId"></select>
+                    </div>
+
+                    <div class="form-group">
+                        
+                            <label asp-for="UserId" class="control-label"></label>
+                            <select asp-for="UserId" class="form-control" asp-items="ViewBag.UserId"></select>
+                        
+
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+
+    </div>
+</section>
+

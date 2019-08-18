@@ -1,0 +1,37 @@
+﻿@model JobbyGarden.Models.Age
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layoutpanel.cshtml";
+}
+<section class="content">
+    <div class="container-fluid">
+        <h2>Delete</h2>
+
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+            <h4>Age</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Miniage)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Miniage)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Maxage)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Maxage)
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                <a asp-action="Index">Back to List</a>
+            </form>
+        </div>
+</div>
+</section>

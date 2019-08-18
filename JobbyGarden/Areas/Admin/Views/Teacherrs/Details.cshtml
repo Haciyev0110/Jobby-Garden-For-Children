@@ -1,0 +1,70 @@
+﻿@model JobbyGarden.Models.Teacherr
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layoutpanel.cshtml";
+}
+
+<h2>Details</h2>
+ <<section class="content" style="height:auto">
+    <div class="container-fluid">
+        <div>
+            <h4>Teacherr</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Fullname)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Fullname)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Images)
+                </dt>
+                <dd>
+                    <img src="~/Librarry/Teacher/@Model.Images" style="width:200px" />
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Minidescription)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Minidescription)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Special)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Special)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Experience)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Experience)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Phone)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Sliderdesc)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Sliderdesc)
+                </dd>
+            </dl>
+        </div>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+        </div>
+</section>

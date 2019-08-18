@@ -1,0 +1,74 @@
+﻿@model JobbyGarden.Models.Teacherr
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layoutpanel.cshtml";
+}
+
+<h2>Edit</h2>
+
+<h4>Teacherr</h4>
+<hr />
+<<section class="content" style="height:auto">
+    <div class="container-fluid">
+      
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Fullname" class="control-label"></label>
+                <input asp-for="Fullname" class="form-control" />
+                <span asp-validation-for="Fullname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Images" class="control-label"></label>
+                <input asp-for="Images" class="form-control" type="file" />
+                <span asp-validation-for="Images" class="text-danger"></span>
+                <input type="hidden" name="fileadi" value="@Model.Images" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Minidescription" class="control-label"></label>
+                <input asp-for="Minidescription" class="form-control" />
+                <span asp-validation-for="Minidescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TitleDesc" class="control-label"></label>
+                <input asp-for="TitleDesc" class="form-control" />
+                <span asp-validation-for="TitleDesc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Special" class="control-label"></label>
+                <input asp-for="Special" class="form-control" />
+                <span asp-validation-for="Special" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Experience" class="control-label"></label>
+                <input asp-for="Experience" class="form-control" />
+                <span asp-validation-for="Experience" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sliderdesc" class="control-label"></label>
+                <input asp-for="Sliderdesc" class="form-control" />
+                <span asp-validation-for="Sliderdesc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+           
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+        </div>
+</section>

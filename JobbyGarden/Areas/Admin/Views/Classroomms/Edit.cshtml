@@ -1,0 +1,86 @@
+﻿@model JobbyGarden.Models.Classroomm
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layoutpanel.cshtml";
+}
+<<section class="content" style="height:auto">
+    <div class="container-fluid">
+        <h2>Edit</h2>
+
+        <h4>Classroomm</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Edit" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Iamgename" class="control-label"></label>
+                        <input asp-for="Iamgename" class="form-control" type="file" />
+                        <input type="hidden" name="fileadi" value="@Model.Iamgename" />
+                        <span asp-validation-for="Iamgename" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Price" class="control-label"></label>
+                        <input asp-for="Price" class="form-control" min="0" />
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Description" class="control-label"></label>
+                        <input asp-for="Description" class="form-control" />
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Size" class="control-label"></label>
+                        <input asp-for="Size" class="form-control"  min="0"/>
+                        <span asp-validation-for="Size" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Openhourse" class="control-label"></label>
+                        <input asp-for="Openhourse" class="form-control" />
+                        <span asp-validation-for="Openhourse" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Closehours" class="control-label"></label>
+                        <input asp-for="Closehours" class="form-control" />
+                        <span asp-validation-for="Closehours" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Startime" class="control-label"></label>
+                        <input asp-for="Startime" class="form-control" />
+                        <span asp-validation-for="Startime" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TeacherId" class="control-label"></label>
+                        <select asp-for="TeacherId" class="form-control" asp-items="ViewBag.TeacherId"></select>
+                        <span asp-validation-for="TeacherId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="AgeeId" class="control-label"></label>
+                        <select asp-for="AgeeId" class="form-control" asp-items="ViewBag.AgeeId"></select>
+                        <span asp-validation-for="AgeeId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CategoryId" class="control-label"></label>
+                        <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+                        <span asp-validation-for="CategoryId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-default" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+
+</div>
+</section>

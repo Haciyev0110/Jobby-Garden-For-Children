@@ -1,0 +1,131 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="UsersImage\2019_03-DD_19_26author-01.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="NewFolder\" />
+    <Folder Include="wwwroot\Librarry\Class\" />
+    <Folder Include="wwwroot\Librarry\Blog\" />
+    <Folder Include="wwwroot\Librarry\Users\" />
+    <Folder Include="wwwroot\Librarry\Teacher\" />
+    <Folder Include="wwwroot\panel\assets\css\images\portfolio\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\css\images\portfolio\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\css\images\portfolio\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\css\images\portfolio\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\css\js\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\css\js\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\css\js\vendors\flexslider\css\bootstrap\" />
+    <Folder Include="wwwroot\panel\assets\css\js\vendors\flexslider\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\css\js\vendors\flexslider\images\slides\" />
+    <Folder Include="wwwroot\panel\assets\css\js\vendors\flexslider\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\css\js\vendors\flexslider\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\css\js\vendors\flexslider\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\css\js\vendors\flexslider\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\css\js\vendors\jquery\css\bootstrap\" />
+    <Folder Include="wwwroot\panel\assets\css\js\vendors\jquery\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\css\js\vendors\jquery\images\slides\" />
+    <Folder Include="wwwroot\panel\assets\css\js\vendors\jquery\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\css\js\vendors\jquery\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\css\js\vendors\jquery\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\css\js\vendors\jquery\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\css\rs-plugin\js\css\bootstrap\" />
+    <Folder Include="wwwroot\panel\assets\css\rs-plugin\js\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\css\rs-plugin\js\images\slides\" />
+    <Folder Include="wwwroot\panel\assets\css\rs-plugin\js\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\css\rs-plugin\js\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\css\rs-plugin\js\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\css\rs-plugin\js\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\images\css\bootstrap\css\bootstrap\" />
+    <Folder Include="wwwroot\panel\assets\images\css\bootstrap\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\images\css\bootstrap\images\slides\" />
+    <Folder Include="wwwroot\panel\assets\images\css\bootstrap\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\images\css\bootstrap\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\images\css\bootstrap\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\images\css\bootstrap\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\images\css\css\bootstrap\" />
+    <Folder Include="wwwroot\panel\assets\images\css\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\images\css\images\slides\" />
+    <Folder Include="wwwroot\panel\assets\images\css\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\images\css\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\images\css\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\images\css\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\images\images\css\bootstrap\" />
+    <Folder Include="wwwroot\panel\assets\images\images\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\images\images\images\slides\" />
+    <Folder Include="wwwroot\panel\assets\images\images\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\images\images\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\images\images\portfolio\css\bootstrap\" />
+    <Folder Include="wwwroot\panel\assets\images\images\portfolio\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\images\images\portfolio\images\slides\" />
+    <Folder Include="wwwroot\panel\assets\images\images\portfolio\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\images\images\portfolio\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\images\images\portfolio\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\images\images\portfolio\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\images\images\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\images\images\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\images\images\slides\css\bootstrap\" />
+    <Folder Include="wwwroot\panel\assets\images\images\slides\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\images\images\slides\images\slides\" />
+    <Folder Include="wwwroot\panel\assets\images\images\slides\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\images\images\slides\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\images\images\slides\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\images\images\slides\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\images\js\css\bootstrap\" />
+    <Folder Include="wwwroot\panel\assets\images\js\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\images\js\images\slides\" />
+    <Folder Include="wwwroot\panel\assets\images\js\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\images\js\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\images\js\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\images\js\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\css\bootstrap\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\flexslider\css\bootstrap\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\flexslider\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\flexslider\images\slides\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\flexslider\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\flexslider\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\flexslider\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\flexslider\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\images\slides\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\jquery\css\bootstrap\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\jquery\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\jquery\images\slides\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\jquery\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\jquery\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\jquery\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\jquery\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\images\js\vendors\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\images\rs-plugin\css\css\bootstrap\" />
+    <Folder Include="wwwroot\panel\assets\images\rs-plugin\css\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\images\rs-plugin\css\images\slides\" />
+    <Folder Include="wwwroot\panel\assets\images\rs-plugin\css\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\images\rs-plugin\css\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\images\rs-plugin\css\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\images\rs-plugin\css\rs-plugin\js\" />
+    <Folder Include="wwwroot\panel\assets\images\rs-plugin\js\css\bootstrap\" />
+    <Folder Include="wwwroot\panel\assets\images\rs-plugin\js\images\portfolio\" />
+    <Folder Include="wwwroot\panel\assets\images\rs-plugin\js\images\slides\" />
+    <Folder Include="wwwroot\panel\assets\images\rs-plugin\js\js\vendors\flexslider\" />
+    <Folder Include="wwwroot\panel\assets\images\rs-plugin\js\js\vendors\jquery\" />
+    <Folder Include="wwwroot\panel\assets\images\rs-plugin\js\rs-plugin\css\" />
+    <Folder Include="wwwroot\panel\assets\images\rs-plugin\js\rs-plugin\js\" />
+  </ItemGroup>
+
+</Project>
